@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case4</title>
+    <style>
+        body{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        div{
+            border: red 2px solid;
+            border-radius: 100%;
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+            animation-name: waterdrop;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+
+        }
+
+
+        @keyframes waterdrop {
+            0%{
+
+            }
+
+            25%{
+                width: 125px;
+                height: 125px;
+                opacity: 0.75;
+            }
+
+            50%{
+                width: 150px;
+                height: 150px;
+                opacity: 0.5;
+            }
+
+            75%{
+                width: 175px;
+                height: 175px;
+                opacity: 0.25;
+            }
+
+            100%{
+                width: 200px;
+                height: 200px;
+                opacity: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+<div></div>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+.contact-me-page {
+    text-align: center;
+}
+
+.contact-me-main-content-section {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #777;
+}
+
+.contact-me-row {
+    width: 400px;
+    margin: 0 50px 0 50px;
+}
+
+.colunm-01 {
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+.contact-me-row-hello {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.contact-me-email-section {
+    margin: 20px 0 20px 0;
+    color: wheat;
+}
+
+.contact-me-email-section > div:first-child{
+    color: white;
+    font-weight: bold;
+}
+
+.about-social {
+    margin-left: -8px;
+}
+
+.contact-me-name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+.column-02 {
+    padding-right: 20px;
+}
+
+
+.contact-me-form {
+    display: flex;
+    flex-direction: column;
+     gap: 15px;
+    max-width: 600px;
+    /* margin: 0 auto; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Row for First Name and Last Name */
+.input-row {
+    display: flex;
+    gap: 5px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-me-name-input-field {
+    width: 190px;
+    padding: 0 0 0 15px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgb(186, 9, 223);
+    transition: border-color 0.3s;
+}
+
+.contact-me-input-field {
+    padding: 0 0 0 15px;
+    border: none;
+    height: 40px;
+    width: 400px;
+    border-radius: 20px;
+    font-family: monospace;
+    box-shadow: 0px 4px 6px rgb(186, 9, 223);
+    transition: border-color 0.3s;
+}
+
+.contact-me-textarea-field {
+    width: 380px;
+    height: 150px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgb(186, 9, 223);
+    transition: border-color 0.3s;
+}
+
+/* Styling for the button */
+.contact-me-submit-button {
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #090f12;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-me-submit-button:hover {
+    background-color: #f8c032;
+}
+
+
+
+
+/* Tablet (max-width: 768px) */
+@media all and (max-width: 768px) {
+    .contact-me-main-content-section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 75px;
+    }
+
+    .colunm-01{
+        text-align: center;
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .column-02 {
+        padding: 0;
+    }
+
+    .contact-me-name-input-field {
+        width: 190px;
+    }
+}
+
+
+
+/* Mobile (max-width: 480px) */
+@media all and (max-width: 480px) {
+
+    .contact-me-page {
+        margin-top: 100px;
+    }
+
+    .contact-me-main-content-section {
+        display: flex;
+        margin-top: 75px;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        flex-direction: column-reverse;
+    }
+
+    .input-row {
+        display: flex;
+        gap: 3vw;
+        flex-direction: column;
+    }
+
+
+    .contact-me-input-field {
+        height: 10vw;
+        width: 80vw;
+        box-shadow: 0 0 10px rgb(186, 9, 223) !important;
+        /*padding: 0 0 0 0.7vw;*/
+        /*font-size: 1vw;*/
+    }
+
+    .contact-me-form {
+        /*width: 100vw;*/
+    }
+
+
+    .contact-me-row {
+        /*margin: 20px;*/
+        /*padding: 10px;*/
+        width: 100vw;
+    }
+
+    .contact-me-name-input-field {
+        width: 80vw;
+        box-shadow: 0 0 10px rgb(186, 9, 223) !important;
+    }
+
+    .contact-me-textarea-field {
+        width: 77vw;
+        height: 44vw;
+        box-shadow: 0 0 10px rgb(186, 9, 223) !important;
+    }
+
+    .contact-me-submit-button {
+        width: 40vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+    .contact-me-name {
+        font-size: 2vw;
+    }
+
+    .colunm-01 {
+        width: 100vw;
+    }
+
+    .contact-me-row-hello {
+        font-size: 8vw;
+    }
+
+    .colunm-01>p {
+        padding: 6vw;
+        font-size: 4vw;
+    }
+
+    .contact-me-name {
+        font-size: 7vw;
+        margin-bottom: -50px;
+    }
+
+
+
+}
+
+
+
+
+
+
+/* 4K Displays (min-width: 1441px) */
+@media (min-width: 1441px) {
+
+    .contact-me-main-content-section {
+        margin-top: 6vw;
+        font-size: 1.5vw;
+    }
+
+    .contact-me-row {
+        width: 40vw;
+        margin: 0 2vw;
+    }
+
+    .colunm-01 {
+        padding-left: 0.9vw;
+    }
+
+    .contact-me-row-hello {
+        font-size: 2vw;
+    }
+
+    .contact-me-email-section {
+        margin: 1.6vw 0;
+    }
+
+    .contact-me-name {
+        font-size: 1.4vw;
+        margin-top: 2vw;
+    }
+
+    .column-02 {
+        padding-right: 0.9vw;
+    }
+
+    .contact-me-form {
+        max-width: 40vw;
+    }
+
+    .contact-me-name-input-field {
+        padding: 0 0 0 0.7vw;
+        height: 3vw;
+        width: 18vw;
+        font-size: 1vw;
+    }
+
+    .contact-me-input-field {
+        height: 3vw;
+        width: 37vw;
+        padding: 0 0 0 0.7vw;
+        font-size: 1vw;
+    }
+
+    .contact-me-textarea-field {
+        width: 36vw;
+        height: 15vw;
+        padding: 0.7vw;
+        font-size: 1vw;
+    }
+
+    .contact-me-submit-button {
+        width: 9vw;
+        height: 3vw;
+        font-size: 1vw;
+    }
+
+    .contact-me-name {
+        font-size: 2vw;
+    }
+}

@@ -1,0 +1,54 @@
+
+.Asigment h2{
+    margin-bottom: 10rem;
+}
+
+.Asigment-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.Asigment-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.Asigment-container .Asigment-box {
+    flex: 1 1 40rem;
+    background: white;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid rgb(224, 224, 224);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.Asigment-container .Asigment-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    background-color: white;
+    color: black;
+}
+
+.Asigment-box i{
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.Asigment h3 {
+    font-size: 2.6rem;
+}
+
+.Asigment-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+

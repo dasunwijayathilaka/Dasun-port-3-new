@@ -1,0 +1,84 @@
+.skills h2 {
+    margin-bottom: 2rem;
+}
+
+.skills {
+    margin: 0 auto;
+}
+
+.skill-bars {
+    padding: 25px 30px;
+    background: white;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.skill-bars .bar {
+    margin: 20px 0;
+}
+
+.skill-bars .bar:first-child {
+    margin-top: 0px;
+}
+
+.skill-bars .bar .info {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center; /* Center icon and text vertically */
+    gap: 0.5rem; /* Space between icon and text */
+}
+
+.skill-bars .bar .info span {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.skill-bars .bar .progress-line {
+    height: 10px;
+    width: 100%;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+}
+
+.bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+}
+
+.bar .progress-line.javascript span {
+    width: 80%;
+    background-color: gold;
+}
+
+.bar .progress-line.react span {
+    width: 90%;
+    background-color: rgb(58, 58, 255);
+}
+
+.bar .progress-line.mongodb span {
+    width: 75%;
+    background-color: greenyellow;
+}
+
+.bar .progress-line.html span {
+    width: 100%;
+    background-color: orangered;
+}
+
+.bar .progress-line.css span {
+    width: 100%;
+    background-color: blue;
+}
+
+.info i {
+    font-size: 2rem; /* Adjust icon size */
+    color: var(--main-color); /* Change icon color if needed */
+}

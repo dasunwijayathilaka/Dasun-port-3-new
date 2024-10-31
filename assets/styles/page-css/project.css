@@ -1,0 +1,262 @@
+.project-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-main-content-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.project-card {
+    max-width: 280px;
+    border-radius: 0.5rem;
+    background-color: black;
+    border: 1px solid transparent;
+    margin: 50px;
+    box-shadow: 0px 4px 6px rgb(248, 192, 50), 0px 10px 20px rgb(62, 230, 15);
+
+}
+
+.project-card a {
+    text-decoration: none
+}
+
+.project-card-content {
+    padding: 1.1rem;
+}
+
+.project-card-image {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 30px 30px 0 0;
+    background-color: rgb(239, 205, 255);
+}
+
+.title {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+.project-card-desc {
+    margin-top: 1.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.project-card-action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+
+    font-family: "Yantramanav", sans-serif;
+    font-style: normal;
+}
+
+.project-card-action span {
+    transition: .3s ease;
+}
+
+.project-card-action:hover span {
+    transform: translateX(4px);
+}
+
+.project-card-button-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.project-card-github img {
+    height: 30px;
+}
+
+.project-card-title {
+    font-family: "Yantramanav", sans-serif;
+    font-size: 23px;
+}
+
+
+
+
+/*GitHub button*/
+ul {
+    list-style: none;
+    padding: 0;  /* Remove padding */
+    margin: 0;   /* Remove margin */
+}
+
+.example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.example-2 .icon-content {
+    margin: 0; /* Remove margin */
+    position: relative;
+}
+
+.example-2 .icon-content .tooltip {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    transform: translateX(50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: 5px;
+}
+
+.example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+
+.example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+.example-2 .icon-content a:hover {
+    color: white;
+}
+
+.example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover .filled {
+    height: 100%;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+}
+/*end of GitHub button*/
+
+
+
+
+
+/* 4K Displays (min-width: 1441px) */
+@media (min-width: 1441px) {
+    .project-main-content-section {
+        /*margin-top: 100px;*/
+    }
+
+    .project-card {
+        max-width: 20vw;
+        height: 40vw;
+        margin: 50px;
+    }
+
+
+    .project-card-image {
+        height: 15vw;
+    }
+
+    .project-card-title {
+        font-size: 2vw;
+    }
+
+
+    .project-card-desc {
+        font-size: 1.2vw;
+        line-height: 1.5vw;
+    }
+}
+
+
+
+
+/* Mobile (max-width: 480px) */
+@media all and (max-width: 480px) {
+    .project-page {
+        margin-top: 100px;
+    }
+
+    .project-main-content-section {
+        margin-top: 100px;
+    }
+
+    .project-card {
+        max-width: 260px;
+        margin: 1px 1px 50px 1px;
+    }
+
+    .project-card-title {
+        font-size: 17px;
+    }
+
+
+    .project-card-desc {
+        margin-top: 1rem;
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+
+/* Tablet (max-width: 768px) */
+@media all and (max-width: 768px) {
+    .project-main-content-section {
+        margin-top: 50px;
+    }
+}

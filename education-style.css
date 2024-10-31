@@ -1,0 +1,109 @@
+/*
+.education {
+    position: relative; !* Ensure the title's position is relative for better layout control *!
+}
+
+.education h2 {
+    min-height: 100vh; !* Keeps the title height consistent *!
+    padding: 100px 15px; !* Adds padding around the title *!
+    background: var(--bg-color); !* Background color for the title *!
+    text-align: center; !* Center the title text *!
+    color: var(--main-color); !* Set title color *!
+    font-size: 4rem; !* Increase font size *!
+    font-weight: 700; !* Make it bold *!
+    text-transform: uppercase; !* Uppercase for emphasis *!
+    margin-bottom: 5rem; !* Space below the title *!!*!
+}
+
+!* Add underline effect below the title *!
+.education h2::after {
+    content: "";
+    display: block; !* Display the line as a block *!
+    width: 80px; !* Set the width of the underline *!
+    height: 5px; !* Set the height of the underline *!
+    background-color: var(--main-color); !* Line color *!
+    margin: 20px auto 0; !* Center the line *!
+    border-radius: 10px; !* Rounded edges for the line *!
+}
+
+.education-container {
+    max-width: 1000px; !* Maximum width for the container *!
+    margin: auto; !* Center the container *!
+    display: flex; !* Use flexbox for layout *!
+    flex-wrap: wrap; !* Allow wrapping *!
+    position: relative; !* Position for absolute children *!
+}
+
+.education-container::before {
+    content: ""; !* Before content for the vertical line *!
+    position: absolute; !* Positioning *!
+    width: 5px; !* Line width *!
+    height: 100%; !* Line height *!
+    background-color: var(--main-color); !* Line color *!
+    left: calc(50% - 1px); !* Center the line *!
+}
+
+.education-box {
+    margin-bottom: 40px; !* Spacing between boxes *!
+    width: 100%; !* Full width *!
+    position: relative; !* Positioning *!
+}
+
+.education-box:last-child {
+    margin-bottom: 0; !* No margin for the last box *!
+}
+
+.education-box:nth-child(odd) {
+    padding-right: calc(50% + 30px); !* Right padding for odd boxes *!
+    text-align: right; !* Text aligned to the right *!
+}
+
+.education-box:nth-child(even) {
+    padding-left: calc(50% + 30px); !* Left padding for even boxes *!
+}
+
+.education-dot {
+    height: 21px; !* Dot height *!
+    width: 21px; !* Dot width *!
+    background-color: var(--main-color); !* Dot color *!
+    position: absolute; !* Absolute positioning *!
+    left: calc(50% - 8px); !* Center the dot *!
+    border-radius: 50%; !* Circular shape *!
+    top: 10px; !* Position from the top *!
+}
+
+.education-date {
+    font-size: 20px; !* Date font size *!
+    font-weight: 800; !* Date font weight *!
+    color: white; !* Date color *!
+    margin: 6px 0 15px; !* Date margin *!
+}
+
+.education-content {
+    background-color: var(--main-color); !* Background for content *!
+    padding: 30px; !* Content padding *!
+    border-radius: 10px; !* Rounded corners *!
+    cursor: pointer; !* Pointer cursor on hover *!
+    transition: 0.3s ease-in-out; !* Transition effect *!
+}
+
+.education-content:hover {
+    transform: scale(1.05); !* Scale effect on hover *!
+}
+
+.education-content h3 {
+    font-size: 20px; !* Content heading font size *!
+    color: white; !* Content heading color *!
+    margin: 0 0 10px; !* Margin for heading *!
+    text-transform: capitalize; !* Capitalize heading *!
+    font-weight: 500; !* Heading font weight *!
+}
+
+.education-content p {
+    color: white; !* Paragraph color *!
+    opacity: 0.8; !* Paragraph opacity *!
+    font-size: 16px; !* Paragraph font size *!
+    font-weight: 400; !* Paragraph font weight *!
+    line-height: 22px; !* Line height for paragraph *!
+}
+*/

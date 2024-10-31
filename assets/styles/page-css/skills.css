@@ -1,0 +1,223 @@
+.skill-main-content-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    box-shadow: 0px 4px 6px rgb(248, 192, 50), 0px 10px 20px rgb(62, 230, 15);
+    border-radius: 50px;
+    padding: 30px;
+    margin: 30px;
+}
+
+.skill-card-title {
+    text-align: center;
+    font-size: 24.57px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.skill-card-skill {
+    display: flex;
+    margin: 20px 20px 40px 20px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+}
+
+.skill-card-skill-name {
+    font-size: 15.6px;
+    margin-left: 10px;
+}
+
+.skill-card-skill > img {
+    height: 40px;
+}
+
+.skill-card-skill > div > img {
+    height: 17px;
+}
+
+.skill-card-skill-level {
+    font-size: 10px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+.soft-skill-section {
+    margin-top: 50px;
+}
+
+.soft-skill {
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.soft-skill-dot {
+    height: 17px;
+    margin-right: 20px;
+}
+
+.soft-skill-dsc {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 40px;
+    color: white;
+}
+
+/* Tablet (max-width: 768px) */
+@media all and (max-width: 768px) {
+    .skill-page {
+        margin-top: 200px;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media all and (max-width: 480px) {
+
+    .skill-page {
+        margin-top: 200px;
+    }
+    .skill-card {
+        max-width: 270px;
+        padding: 10px;
+        margin: 0 0 50px 0;
+        border-radius: 37px;
+    }
+
+    .skill-card-skill > img {
+        height: 30px;
+    }
+
+    .skill-main-content-section {
+        margin-top: 100px;
+    }
+
+    .skill-card-skill {
+        margin: 20px 20px 20px 20px;
+    }
+
+    .skill-card-title {
+        font-size: 18px;
+    }
+
+    .rows {
+        margin-top: 30px;
+    }
+
+    .skill-card-skill-name {
+        font-size: 10.5px;
+    }
+
+    .skill-card-skill-level {
+        font-size: 8px;
+    }
+
+    .skill-card-skill > div > img {
+        height: 10px;
+    }
+
+    .soft-skill-dot {
+        height: 11px;
+        margin-right: 10px;
+    }
+
+    .soft-skill {
+        font-family: "Urbanist", sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .soft-skill-dsc {
+        font-size: 12px;
+        margin-left: 25px;
+    }
+    .soft-skill-section {
+        margin-top: 30px;
+    }
+}
+
+
+/* 4K Displays (min-width: 1441px) */
+@media (min-width: 1441px) {
+    .skill-main-content-section {
+        margin-top: 10.41vw;
+    }
+
+    .skill-card {
+        width: 24.28vw;
+        box-shadow: 0px 0.28vw 0.42vw rgb(248, 192, 50), 0px 0.69vw 1.39vw rgb(62, 230, 15);
+        border-radius: 3.47vw;
+        padding: 2.08vw;
+        margin: 2.08vw;
+    }
+
+    .skill-card-title {
+        font-size: 1.70vw;
+        margin-top: 1.39vw;
+    }
+
+    .rows {
+        margin-top: 3.47vw;
+    }
+
+    .skill-card-skill {
+        margin: 1.39vw 1.39vw 2.78vw 1.39vw;
+    }
+
+    .skill-card-skill-name {
+        font-size: 1.08vw;
+        margin-left: 0.69vw;
+    }
+
+    .skill-card-skill > img {
+        height: 2.78vw;
+    }
+
+    .skill-card-skill > div > img {
+        height: 1.18vw;
+    }
+
+    .skill-card-skill-level {
+        font-size: 0.69vw;
+    }
+
+    .soft-skill-section {
+        margin-top: 3.47vw;
+    }
+
+    .soft-skill {
+        font-family: "Urbanist", sans-serif;
+        font-size: 1.25vw;
+        font-weight: bold;
+        padding: 1.39vw;
+    }
+
+    .soft-skill-dot {
+        height: 1.18vw;
+        margin-right: 1.39vw;
+    }
+
+    .soft-skill-dsc {
+        font-size: 0.97vw;
+        margin-left: 2.78vw;
+    }
+}
+

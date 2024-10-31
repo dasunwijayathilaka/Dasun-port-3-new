@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="html, css">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <title>Case-01 Assignment-04</title>
+
+    <!--google font Urbanist-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    body>section {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        justify-content: start;
+        align-items: center;
+    }
+
+    body>section>div {
+        position: relative;
+        background-color: #a323d1;
+        height: 50px;
+        width: 200px;
+        box-shadow: 1px 2px 6px 0;
+        left: -70%;
+        transition: left 1s ease; /* Add this line for smooth transition */
+    }
+
+    body>section>div>img {
+        position: absolute;
+        height: 40px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    body>section>div>label {
+        position: absolute;
+        height: 15px;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        color: white;
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    div:hover {
+        left: 0;
+    }
+</style>
+<body>
+<section>
+    <div>
+        <label>Menu one</label>
+        <img src="../assets/images/phone-book.png">
+    </div>
+    <div>
+        <label>Menu two</label>
+        <img src="../assets/images/lorry.png">
+    </div>
+    <div>
+        <label>Menu three</label>
+        <img src="../assets/images/menu-03.png">
+    </div>
+    <div>
+        <label>Menu four</label>
+        <img src="../assets/images/menu-04.png">
+    </div>
+    <div>
+        <label>Menu five</label>
+        <img src="../assets/images/menu-05.png">
+    </div>
+</section>
+</body>
+</html>

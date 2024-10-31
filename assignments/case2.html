@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Example</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        .circle-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+
+        .circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            position: relative;
+            z-index: 2; /* Keep the text circle on top */
+        }
+
+        /* Static circle with text */
+        .circle-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+        }
+
+        /* Rotating red bar */
+        .circle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 10px solid white;
+            border-top-color: red;
+            z-index: 1; /* Keep the rotating border behind the circle content */
+            transition: transform 2s linear; /* Smooth rotation transition */
+        }
+
+        /* Rotate the red bar on hover */
+        .circle-container:hover .circle::before {
+            transform: rotate(360deg); /* Rotate 360 degrees on hover */
+        }
+    </style>
+</head>
+<body>
+<div class="circle-container">
+    <div class="circle">
+        <div class="circle-content">
+            RWAD
+        </div>
+    </div>
+</div>
+</body>
+</html>

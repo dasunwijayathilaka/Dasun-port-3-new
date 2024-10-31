@@ -1,0 +1,53 @@
+.services h2 {
+    margin-bottom: 10rem;
+}
+
+.service-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service-container .services-box {
+    flex: 1 1 40rem;
+    background: white;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid rgb(224, 224, 224);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    position: relative;
+}
+
+/* Scale and shadow effect on hover */
+.service-container .services-box:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Icon styles */
+.services-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+/* Heading styles */
+.services-box h3 {
+    font-size: 2.6rem;
+}
+
+/* Paragraph styles */
+.services-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+/* Optional: Add a hover effect to the text */
+.service-container .services-box:hover h3,
+.service-container .services-box:hover p {
+    color: var(--main-color); /* Change text color on hover */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}

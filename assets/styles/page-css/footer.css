@@ -1,0 +1,135 @@
+/*Back to top button*/
+.footer-back-to-up-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(248, 192, 50);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.footer-back-to-up-button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(62, 230, 15);
+    align-items: center;
+}
+
+.footer-back-to-up-button:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+.footer-back-to-up-button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+}
+
+.footer-back-to-up-button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+}
+/*end of back to top button*/
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-text {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: black;
+    /*font-family: sans-serif;*/
+    font-weight: 300;
+    height: 20px;
+    width:100vw;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+}
+
+.footer-back-to-up-button-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* 4K Displays (min-width: 1441px) */
+@media (min-width: 1441px) {
+
+    .footer-back-to-up-button {
+        width: 2.6vw;
+        height: 2.6vw;
+        box-shadow: 0px 0px 0px 0.21vw rgb(255, 255, 255);
+    }
+
+    .footer-back-to-up-button:hover {
+        width: 7.29vw;
+    }
+
+    .svgIcon {
+        width: 0.62vw;
+    }
+
+    .footer-back-to-up-button-section {
+        margin-right: 5.2vw;
+    }
+
+    #footer-text {
+        height: 2.08vw;
+        width: 100vw;
+        margin-top: 3.13vw;
+        font-size: 30px;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media all and (max-width: 480px) {
+    #footer-text {
+        font-size: 10px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-back-to-up-button-section {
+        margin-right: 20px;
+    }
+}

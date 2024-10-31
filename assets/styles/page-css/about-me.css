@@ -1,0 +1,387 @@
+.topic-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+
+    /*background-color: red;*/
+}
+
+.page-topic {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+.page-sub-topic {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 100;
+    color: gold;
+    margin-bottom: 5px;
+}
+.about-content-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+
+    /*background-color: #575757;*/
+}
+
+#about-Dasun {
+    height: 500px; /* Obē pinthurayē usuma podi kirīma */
+    margin: -100px -20px -30px -10px;
+    box-shadow: 0px 4px 6px rgb(248, 192, 50), 0px 10px 20px rgb(5, 255, 197);
+
+}
+
+#about-Dasun-img {
+    height: 200px;
+}
+
+#about-detail-section {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 90px 20px 30px 10px;
+
+    font-family: "Urbanist", sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.about-social-section img {
+    width: 40px;
+}
+
+.about-social-section a {
+    text-decoration: none;
+}
+
+#about-name {
+    font-family: "Vazirmatn", sans-serif;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.about-content-section > p {
+    color: #adb5bd;
+    width: 530px;
+    text-align: left;
+    font-size: 1.7vw;
+    margin: 10px 20px 10px 20px;
+    /*font-family: "Apple Symbols";*/
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+.about-buttons {
+    display: flex;
+    align-items: center;
+}
+
+/*CV button*/
+.button-cv {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 8px 30px 8px 30px;
+    cursor: pointer;
+    color: #d405ff;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20em;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-cv svg {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.button-cv:hover {
+    background-color: white;
+    color: #e4051f;
+    border-color: #e4051f;
+}
+
+.button-cv:hover svg {
+    transform: rotate(20deg);
+}
+
+.button-cv:active {
+    box-shadow: 0 0.3em 1em -0.5em #2957cf;
+}
+
+
+
+
+
+
+/*Hire me button*/
+.custom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left:5px;
+    font-size: 1.125rem;
+    background-color: #f9fafb;
+    backdrop-filter: blur(10px);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 10;
+    border: 2px solid #f9fafb;
+    border-radius: 9999px;
+    overflow: hidden;
+    transition: color 0.7s ease;
+    cursor: pointer;
+}
+
+.custom-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #10b981;
+    transition: all 0.7s ease;
+    z-index: -1;
+    border-radius: 9999px;
+}
+
+.custom-button:hover::before {
+    left: 0;
+}
+
+.custom-button:hover {
+    color: #f9fafb;
+}
+
+.custom-svg {
+    width: 10px;
+    height: 10px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid #374151;
+    transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+    transform: rotate(45deg);
+}
+
+.custom-button:hover .custom-svg {
+    transform: rotate(90deg);
+    background-color: #f9fafb;
+    border: none;
+}
+
+.custom-path {
+    fill: #e4051f;
+}
+
+.custom-button:hover .custom-path {
+    fill: #ba09df;
+}
+
+
+
+/* Tablet (max-width: 768px) */
+@media all and (max-width: 768px) {
+    .topic-section {
+        margin-top: 100px;
+    }
+
+    .page-topic {
+        font-size: 40px;
+    }
+
+    .about-content-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about-detail-section {
+        width: 100%;
+        margin: 30px 10px;
+    }
+
+    #about-image, #about-rukshan-img {
+        height: 200px;
+    }
+
+    #about-detail-section p {
+        margin: 10px 20px 10px 20px;
+    }
+
+    .button-cv, .custom-button {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+
+    .about-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .custom-button {
+        color: black !important;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media all and (max-width: 480px) {
+    .topic-section {
+        margin-top: 50px;
+    }
+
+    .page-topic {
+        font-size: 30px;
+    }
+
+    .page-sub-topic {
+        font-size: 14px;
+    }
+
+    .about-content-section {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    #about-detail-section {
+        width: 100%;
+        margin: 20px 5px;
+    }
+
+    .about-social-section img {
+        margin-top: 10px;
+        width: 56px;
+    }
+
+    #about-detail-section p {
+        margin: 10px 20px 0 20px;
+        font-family: "Vazirmatn", sans-serif;
+        line-height: 19px;
+    }
+
+    #about-image, #about-rukshan-img {
+        height: 200px;
+    }
+
+    .button-cv {
+        margin-top: 20px;
+        font-size: 10px;
+        padding: 10px 19px;
+    }
+    .custom-button {
+        margin-top: 20px;
+        color: black !important;
+    }
+}
+
+/* Laptop Large (min-width: 1025px) and (max-width: 1540px) */
+@media (min-width: 1025px) and (max-width: 1540px) {
+    .topic-section {
+        margin-top: 150px;
+    }
+
+    .page-topic {
+        font-size: 50px;
+    }
+
+    .about-content-section {
+        justify-content: space-around;
+    }
+
+    #about-detail-section {
+        margin-left: 100px;
+        width: 30vw;
+        margin-right: 100px;
+    }
+
+    #about-name {
+        font-size: 2.5vw;
+    }
+
+    #about-detail-section p {
+        font-size: 1.2vw;
+        max-width: 500px;
+    }
+
+    .about-social-section img {
+        width: 50px;
+    }
+
+    #about-image {
+        height: 200px;
+        /*margin-left: 60px;*/
+        margin: 0;
+    }
+
+    #about-rukshan-img {
+        height: 22vw;
+        margin-left: 200px;
+    }
+}
+
+/* 4K Displays (min-width: 1441px) */
+@media (min-width: 1441px) {
+    .topic-section {
+        margin-top: 250px;
+    }
+
+    #about-name {
+        font-size: 3vw;
+    }
+
+    #about-detail-section p {
+        font-size: 1.7vw;
+    }
+
+    .page-topic {
+        font-size: 70px;
+    }
+
+    .about-content-section {
+        margin-top: 200px;
+        justify-content: space-evenly;
+    }
+
+    #about-detail-section {
+        width: 50vw;
+    }
+
+    .about-social-section img {
+        width: 4vw;
+    }
+
+    #about-image, #about-rukshan-img {
+        height: 20vw;
+    }
+
+    .button-cv, .custom-button {
+        font-size: 16px;
+        padding: 10px 40px;
+    }
+}
+
+
+
+
+
+
+
+
+

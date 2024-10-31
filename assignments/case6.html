@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Animation</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .scene {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('../assets/images/sky.jpg'); /* Background sky image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .background {
+            position: absolute;
+            width: 200vw;
+            height: 100vh;
+            background-image: url('../assets/images/city.png');
+            background-size: cover;
+            animation: moveBackground 10s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100vw);
+            }
+        }
+
+        .road {
+            position: absolute;
+            bottom: 0;
+            width: 100vw;
+            height: 20vh;
+            background-image: url('../assets/images/road.jpg');
+            background-size: cover;
+            background-repeat: repeat-x;
+        }
+
+        .car {
+            position: absolute;
+            bottom: 14%; /* Lowered to place the car better on the road */
+            left: 35%; /* Centered horizontally */
+            width: 20%; /* Reduced car size */
+            height: auto;
+        }
+
+        .car-body {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        .wheel {
+            position: absolute;
+            width: 20%; /* Adjusted wheel size */
+            height: auto;
+            animation: rotateWheel 1s linear infinite;
+        }
+
+        .front-wheel {
+            position: absolute;
+            bottom: 7%; /* Adjusted for connection with car */
+            left: 8%; /* Positioned under the front of the car */
+        }
+
+        .rear-wheel {
+            position: absolute;
+            bottom: 8%; /* Adjusted for connection with car */
+            right: 11%; /* Positioned under the rear of the car */
+        }
+
+        @keyframes rotateWheel {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="scene">
+    <div class="background"></div>
+    <div class="road"></div>
+    <div class="car">
+        <img src="../assets/images/car.png" alt="Car" class="car-body">
+        <img src="../assets/images/wheel.png" alt="Front Wheel" class="wheel front-wheel">
+        <img src="../assets/images/wheel.png" alt="Rear Wheel" class="wheel rear-wheel">
+    </div>
+</div>
+</body>
+</html>

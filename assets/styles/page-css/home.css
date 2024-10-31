@@ -1,0 +1,623 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+    /*background change portfolio*/
+
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav {
+    position: fixed;
+    top: 1rem;
+    height: 3.75rem;
+    width: 900px;
+    min-width: 769px;
+    background-color: #000000;     /*gold colore eka dala  wenas kara */
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    padding: 0 1.25rem;
+    align-items: center;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+    padding: 1rem 0.6rem; /* Slightly reduce padding for better responsiveness */
+    font-family: 'Inter', sans-serif;
+    font-size: 0.89rem; /* Make font size flexible */
+    width: 10rem;
+    height: 0.9rem;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+/* Menu icon for mobile and tablet, positioned on the right side */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 0; /* Initially hidden */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0; /* Change left to right */
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px; /* Adjust padding if needed */
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    display: block;
+    transition: 0.3s;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 2;
+}
+
+/* When the sidebar is open */
+.sidebar.open {
+    width: 250px; /* Width when opened */
+}
+
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.logo {
+    display: none;
+}
+
+/* Responsive styles for tablet and mobile */
+@media all and (max-width: 768px) {
+    nav {
+        display: none; /* Hide the top navigation bar */
+        position: fixed;
+    }
+
+    .home-page-logo-nav {
+
+        width: 100%;
+        height: 70px;
+        top: 0;
+        left: 0;
+        background-color: gold;
+        position: fixed;
+        z-index: 800;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .sidebar {
+        z-index: 900;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 0 20px; /* Add padding to the header */
+    }
+
+
+    .logo {
+        color: #ffffff; /* Text color */
+        font-size: 1.5rem; /* Adjust font size as needed */
+        margin: 0; /* Remove default margin */
+        display: block; /* Show the logo on mobile/tablet */
+        position: fixed; /* Allow positioning */
+        left: 20px; /* Align to the left side with some padding */
+        top: 35px; /* Center vertically */
+        transform: translateY(-50%); /* Adjust to be exactly centered */
+
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 1000;
+        font-style: normal;
+    }
+
+
+    .menu-icon {
+        display: block; /* Show the menu icon */
+        position: fixed;
+        top: 15px;
+        right: 20px; /* Move the icon to the right side */
+        z-index: 2;
+    }
+}
+
+
+
+
+
+/*Home page*/
+
+.home-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: end;*/
+
+    /*background-color: green;*/
+    margin-top: 100px;
+}
+
+.home-item {
+    display: flex;
+    flex-direction: column;
+    /*background-color: yellow;*/
+    /*border: 2px solid black;*/
+
+    align-items: center;
+
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem; /* Font size adjusted to rem */
+}
+#home-page-first-name {
+    font-weight: 600;
+    font-size: 4.125rem; /* Font size adjusted to rem */
+    -webkit-text-stroke: 2px #ffffff;
+    color: transparent;
+}
+
+
+
+/* Hero page name animation */
+
+
+.loader {
+    color: rgb(124, 124, 124);
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem; /* Adjusted to rem */
+    text-align: center;
+    box-sizing: content-box;
+    height: 70px; /* Adjusted to match the words height */
+    padding: 10px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.words {
+    top: -23px;
+    overflow: hidden;
+    position: relative;
+    height: 70px; /* Match the loader and words container height */
+}
+
+.word {
+    display: block;
+    height: 60px; /* Match the loader and words container height */
+    line-height: 60px; /* Vertically center the text */
+    color: #ffffff;
+    padding: 3px;
+    animation: upAndDownBounce 3.5s infinite ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+.home-page-image-section {
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    height: 100%;
+    width: 768px;
+    margin-top: 120px;
+    align-items: center;
+    /*background-color: red;*/
+}
+#home-page-half-circle {
+    /*align-self: end;*/
+    margin-bottom: -100px;
+    width: 100%;
+
+
+}
+
+
+
+#home-page-dasun-image {
+    margin-top: -400px;
+    height: 300px;
+    /* Pinthura podi kirīma */
+    /*width: 300px;*/ /*Eṭa atiri kirīmat nam width piḷiveḷaṭa salakā */
+}
+
+
+
+
+#home-page-clouds {
+    margin-top: -50px;
+    width: 800px;
+}
+
+
+
+
+/* Default styles for navigation links */
+.upper-navigation {
+    font-weight: normal;
+    background-color: transparent;
+    color: white;
+}
+
+/* Active link styles */
+.upper-navigation.active-link {
+    font-weight: bold;
+    background-color: gold;
+    color: black;
+
+
+}
+
+/* Hover effects */
+.upper-navigation:hover {
+    border: white solid 1px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Active link styles when clicked */
+.upper-navigation:active {
+    border: white solid 2px;
+    background-color: gray; /* Change background when clicked */
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ff0; /* Optional: Change text color when clicked */
+}
+
+
+
+
+
+
+/* Tablet (max-width: 768px) */
+@media all and (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: 3.5rem;
+        padding: 0 0.75rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        padding: 0.9rem 0.5rem;
+        width: 8rem;
+    }
+
+    .home-page {
+        margin-top: 80px;
+    }
+
+    .home-item {
+        font-size: 3rem;
+    }
+
+    #home-page-first-name {
+        font-size: 3rem;
+    }
+
+    .word {
+        font-size: 40px;
+    }
+
+    .home-page-image-section {
+        width: 100%;
+        margin-top: 100px;
+        z-index: 3;
+    }
+
+
+    /*tablet image responsive*/
+    #home-page-dasun-image {
+        margin-top: -300px;
+        height: 400px;
+    }
+
+
+    #home-page-half-circle {
+        margin-bottom: -80px;
+    }
+
+    #home-page-clouds {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+
+
+
+/* Mobile (max-width: 480px) */
+@media all and (max-width: 480px) {
+    nav {
+        width: 100%;
+        height: 3rem;
+        padding: 0 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+        padding: 0.8rem 0.4rem;
+        width: 6rem;
+    }
+
+    .home-page {
+        margin-top: 70px;
+    }
+
+    .home-item {
+        margin-top: -30px;
+    }
+
+    #home-page-first-name {
+        margin-top: 70px;
+        font-size: 32.5px;
+        border: none;
+    }
+
+    .word {
+        font-size: 32.5px;
+    }
+
+    .home-page-image-section {
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    /*mobile image respon*/
+    #home-page-dasun-image {
+        margin-top: -200px;
+        height: 350px;
+    }
+
+    #home-page-half-circle {
+        margin-bottom: -140px;
+    }
+
+    #home-page-clouds {
+        width:100%;
+        height: 50px;
+    }
+}
+
+/* Laptop (min-width: 769px) and (max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        width: 90%;
+        min-width: 729px;
+        /*height: 3.75rem;*/
+    }
+
+    nav a {
+        font-size: 0.89rem;
+        padding: 1rem 0.6rem;
+    }
+
+    .home-page {
+        margin-top: 100px;
+    }
+
+    .home-item {
+        font-size: 3rem;
+    }
+
+    #home-page-first-name, #home-page-role-name {
+        font-size: 3.5rem;
+    }
+
+    .home-page-image-section {
+        width: 80%;
+        margin-top: 150px;
+    }
+
+    /*laptop image respons*/
+    #home-page-dasun-image {
+        margin-top: -350px;
+        height: 450px;
+    }
+
+    #home-page-half-circle {
+        margin-bottom: -100px;
+    }
+
+    #home-page-clouds {
+        width: 100%;
+    }
+}
+
+/* Laptop Large (min-width: 1025px) */
+@media (min-width: 1025px) and (max-width: 1540px) {
+    nav {
+        width: 80%;
+        min-width: 985px;
+    }
+
+    nav a {
+        font-size: 0.89rem;
+    }
+
+    .home-page {
+        margin-top: 100px;
+    }
+
+    .home-item {
+        font-size: 3.5rem;
+    }
+
+    #home-page-first-name, #home-page-role-name {
+        font-size: 4.125rem;
+    }
+
+    .home-page-image-section {
+        width: 768px;
+        margin-top: 120px;
+    }
+
+
+    /*laptop larg image*/
+    #home-page-dasun-image {
+        margin-top: -400px;
+        height: 500px;
+    }
+
+    #home-page-half-circle {
+        margin-bottom: -100px;
+    }
+
+    #home-page-clouds {
+        width: 800px;
+    }
+}
+
+/* 4K Displays (min-width: 1441px) */
+@media (min-width: 1441px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        width: 80vw;
+        height: 4vw
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 1vw 0.6rem; /* Slightly reduce padding for better responsiveness */
+        font-size: 1vw; /* Make font size flexible */
+        width: 9vw;
+        height: 1vw;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+
+
+    .home-page {
+        margin-top: 200px;
+    }
+
+    .home-item {
+        margin-top: -30px;
+        font-size: 2.5rem;
+        /*background-color: green;*/
+    }
+
+    #home-page-first-name {
+        margin-top: 70px;
+        font-size: 5rem;
+    }
+
+    .loader {
+        font-family: "Urbanist", sans-serif;
+        font-weight: 600;
+        font-size: 5rem; /* Adjusted to 6rem as per your request */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px; /* Adjust this to the height that fits your text */
+        border-radius: 8px;
+    }
+
+    .words {
+        position: relative;
+        overflow: hidden;
+        height: 100px; /* Adjusted to fit the larger font size */
+    }
+
+    .word {
+        display: block;
+        height: 100px; /* Match the font size */
+        line-height: 100px; /* Vertically center the text within its container */
+        color: white;
+        animation: upAndDownBounce 4s infinite;
+    }
+    .home-page-image-section {
+        width: 60%;
+        margin-top: 120px;
+        z-index: 4;
+    }
+
+    /*4k image responsive */
+    #home-page-dasun-image {
+        margin-top: -500px;
+        height: 600px;
+    }
+
+    #home-page-half-circle {
+        margin-bottom: -100px;
+        max-width: 1114px;
+    }
+
+    #home-page-clouds {
+        width: 100%;
+        max-width: 1114px;
+    }
+}
+
+
+
+
+
+
+
+
+@keyframes upAndDownBounce {
+    0% {
+        transform: translateY(0); /* Start at original position */
+    }
+    20% {
+        transform: translateY(-105%); /* Move slightly higher than normal */
+    }
+    25% {
+        transform: translateY(-100%); /* Correct the position to settle */
+    }
+    50% {
+        transform: translateY(-100%); /* Hold the position */
+    }
+    70% {
+        transform: translateY(5%); /* Overshoot a bit when going down */
+    }
+    75% {
+        transform: translateY(0); /* Settle back to the original position */
+    }
+    100% {
+        transform: translateY(0); /* Return to the starting position */
+    }
+}
+
+
+
