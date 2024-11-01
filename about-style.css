@@ -15,7 +15,7 @@
 .about-img img {
     position: relative;
     width: 30vw;
-    border-radius: 20%;
+    border-radius: 100%;
     cursor: pointer;
 }
 
@@ -35,10 +35,11 @@
 
 .about-content p {
     font-family: 'Unbounded', cursive;
-    font-size: 1.1rem;
+    font-size: 2.1rem;
     margin: 2rem 0 3rem;
     text-align: center;
 }
+
 
 .about-content .text-animation span::before {
     content: 'Web Developer';
