@@ -70,6 +70,26 @@ span {
     border-bottom: 3px solid transparent;
 }
 
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.navbar a.dark-mode {
+    color: white;
+}
+
+button.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
