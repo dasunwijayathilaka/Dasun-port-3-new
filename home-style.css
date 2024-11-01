@@ -11,7 +11,7 @@
 }
 
 :root {
-    --bg-color: #fcfcfc;
+    --bg-color: #ffffff;
     --second-bg-color: #fafafa;
     --text-color: black;
     --main-color: #ff8615;
@@ -70,7 +70,8 @@ span {
     border-bottom: 3px solid transparent;
 }
 
-/* Dark mode */
+/*
+!* Dark mode *!
 body.dark-mode {
     background-color: #121212;
     color: white;
@@ -86,6 +87,7 @@ button.theme-toggle {
     font-size: 20px;
     cursor: pointer;
 }
+*/
 
 
 
