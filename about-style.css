@@ -17,7 +17,12 @@
     width: 30vw;
     border-radius: 100%;
     cursor: pointer;
+    animation: animate__pulse 2s infinite; /* Adjust timing as needed */
 }
+.about-img img:hover {
+    animation: animate__pulse 2s infinite; /* Trigger on hover */
+}
+
 
 .heading {
     text-align: center;

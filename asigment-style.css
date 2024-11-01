@@ -1,24 +1,20 @@
-
-.Asigment h2{
+/* Assignment Section Title */
+.Asigment h2 {
     margin-bottom: 10rem;
+    animation: fadeInDown 1s ease; /* Title fade in from top */
 }
 
-.Asigment-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
+/* Assignment Container */
 .Asigment-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+    animation: fadeInUp 1.2s ease; /* Container fade in from bottom */
 }
 
+/* Assignment Box */
 .Asigment-container .Asigment-box {
     flex: 1 1 40rem;
     background: white;
@@ -28,38 +24,40 @@
     border: 0.2rem solid rgb(224, 224, 224);
     cursor: pointer;
     transition: 0.4s ease;
+    animation: animate__animated__zoomIn; /* Zoom-in effect */
 }
+
+/* Assignment Box Image */
 .Asigment-box img {
     width: 70%;
     transition: 0.5s ease;
     cursor: pointer;
 }
 
-/*.Asigment-box:hover img {
-    transform: scale(1.1);
-}*/
-
-
+/* Hover Effect */
 .Asigment-container .Asigment-box:hover {
     border-color: var(--main-color);
-    transform: scale(1.02);
+    transform: scale(1.05);
     background-color: white;
     color: black;
+    animation: animate__pulse; /* Add pulse effect on hover */
 }
 
-.Asigment-box i{
+/* Icon in Assignment Box */
+.Asigment-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
 
+/* Assignment Title */
 .Asigment h3 {
     font-size: 2.6rem;
 }
 
+/* Assignment Box Paragraph */
 .Asigment-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
     font-family: 'Unbounded', cursive;
+    animation: fadeIn 1s ease; /* Paragraph fade-in effect */
 }
-
-
