@@ -43,6 +43,8 @@
 .services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+    font-family: 'Unbounded', cursive;
+
 }
 
 /* Optional: Add a hover effect to the text */
