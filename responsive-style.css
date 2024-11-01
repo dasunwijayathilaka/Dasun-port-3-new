@@ -72,8 +72,13 @@
     }
 
     .home-content h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
+
+    .home-content p {   /*change*/
+        text-align: center;
+    }
+
 
     .home-img img {
         width: 70vw;
