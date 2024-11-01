@@ -1,74 +1,14 @@
-/* Base Styles */
-html {
-    font-size: 62.5%; /* Set base font size for rem units */
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-/* Main Content */
-.home-content h1 {
-    font-size: 5rem;
-    color: #000;
-}
-
-.home-content h2 {
-    font-size: 3rem;
-    color: #f48024;
-}
-
-.about-content p {
-    font-size: 1.6rem;
-}
-
-/* Button Styles */
-.cv-button {
-    font-size: 1.8rem;
-    padding: 1.2rem 3rem;
-    background-color: #f48024;
-    color: #fff;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
-
-/* Responsive Styles */
-
 /* Mobile Small (320px) */
 @media (max-width: 320px) {
     html {
         font-size: 50%;
     }
-
-    .home-content h1 {
-        font-size: 3.5rem;
+    .projects-container {
+        padding-bottom: 5rem;
+        grid-template-columns: 1fr;
+        margin: 0 2rem;
     }
-
-    .home-content h2 {
-        font-size: 2rem;
-    }
-
-    .about-content p {
-        font-size: 1.4rem;
-        margin: 0 1rem;
-    }
-
-    .cv-button {
-        font-size: 1.4rem;
-        padding: 1rem 2rem;
-        width: 100%;
-    }
+    /* Add other necessary styles specific to Mobile Small */
 }
 
 /* Mobile Medium (375px) */
@@ -76,19 +16,10 @@ body {
     html {
         font-size: 52.5%;
     }
-
-    .home-content h1 {
-        font-size: 4rem;
+    .projects-container {
+        margin: 0 3rem;
     }
-
-    .home-content h2 {
-        font-size: 2.2rem;
-    }
-
-    .about-content p {
-        font-size: 1.5rem;
-        margin: 0 1.5rem;
-    }
+    /* Additional styles for Mobile Medium */
 }
 
 /* Mobile Large (425px) */
@@ -96,19 +27,10 @@ body {
     html {
         font-size: 55%;
     }
-
-    .home-content h1 {
-        font-size: 4.5rem;
+    .projects-container {
+        margin: 0 4rem;
     }
-
-    .home-content h2 {
-        font-size: 2.5rem;
-    }
-
-    .about-content p {
-        font-size: 1.6rem;
-        margin: 0 2rem;
-    }
+    /* Additional styles for Mobile Large */
 }
 
 /* Tablet (768px) */
@@ -116,35 +38,21 @@ body {
     html {
         font-size: 60%;
     }
-
     header {
         padding: 2rem 3%;
     }
-
-    .home-content h1 {
-        font-size: 5rem;
+    section {
+        padding: 8rem 3% 2rem;
     }
-
-    .home-content h2 {
-        font-size: 2.8rem;
+    .services,
+    .Asigment,
+    .footer {
+        padding-bottom: 5rem;
     }
-
-    .about-content p {
-        font-size: 1.6rem;
-        padding: 0 3%;
-    }
-
     #menu-icon {
         display: block;
     }
-
-    .navbar {
-        display: none;
-    }
-
-    .navbar.active {
-        display: block;
-    }
+    /* Additional tablet-specific adjustments */
 }
 
 /* Laptop (1024px) */
@@ -152,22 +60,10 @@ body {
     html {
         font-size: 65%;
     }
-
-    .home-content h1 {
-        font-size: 5.5rem;
-    }
-
-    .home-content h2 {
-        font-size: 3rem;
-    }
-
-    .about-content p {
-        font-size: 1.8rem;
-    }
-
     .projects-container {
         margin: 0 6rem;
     }
+    /* Other styles for Laptop screens */
 }
 
 /* Laptop Large (1440px) */
@@ -175,18 +71,10 @@ body {
     html {
         font-size: 70%;
     }
-
-    .home-content h1 {
-        font-size: 6rem;
-    }
-
-    .home-content h2 {
-        font-size: 3.5rem;
-    }
-
     .projects-container {
         margin: 0 8rem;
     }
+    /* Other styles for Laptop Large screens */
 }
 
 /* Additional styling adjustments for smaller screens */
@@ -197,52 +85,39 @@ body {
         left: 0;
         width: 100%;
         padding: 1rem 3%;
-        background: #f4f4f4;
+        background: var(--second-bg-color);
         border-top: 0.1rem solid rgba(0, 0, 0, 0.15);
         display: none;
     }
-
     .navbar.active {
         display: block;
     }
-
     .navbar a {
         display: block;
         font-size: 2rem;
-        margin: 2rem 0;
+        margin: 3rem 0;
     }
-
     .home {
         flex-direction: column;
-        margin: 5rem 2rem;
+        margin: 5rem 4rem;
     }
-
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
     .home-content h1 {
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
-
-    .home-content h2 {
-        font-size: 2.8rem;
-    }
-
-    .about-content p {
-        font-size: 1.4rem;
-    }
-
     .home-img img,
     .about img {
         width: 70vw;
         margin-top: 4rem;
     }
-
     .about {
         flex-direction: column-reverse;
     }
-
     .about-content {
         margin: 1rem 4rem;
     }
-
     .services h2,
     .Asigment h2,
     .projects h2 {
