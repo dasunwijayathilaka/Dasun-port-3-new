@@ -1,45 +1,86 @@
+/* Mobile Small (320px) */
+@media (max-width: 320px) {
+    html {
+        font-size: 50%;
+    }
+    .projects-container {
+        padding-bottom: 5rem;
+        grid-template-columns: 1fr;
+        margin: 0 2rem;
+    }
+    /* Adjust font sizes for mobile small screens */
+    .home-content h1 {
+        font-size: 4rem;
+    }
+}
 
-@media (max-width: 1200px) {
+/* Mobile Medium (375px) */
+@media (max-width: 375px) {
+    html {
+        font-size: 52.5%;
+    }
+    .projects-container {
+        margin: 0 3rem;
+    }
+    /* Mobile Medium specific styles */
+}
+
+/* Mobile Large (425px) */
+@media (max-width: 425px) {
     html {
         font-size: 55%;
     }
-
     .projects-container {
-        padding-bottom: 7rem;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 0 5rem;
+        margin: 0 4rem;
     }
+    /* Mobile Large specific styles */
 }
 
-@media (max-width: 991px) {
+/* Tablet (768px) */
+@media (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
     header {
         padding: 2rem 3%;
     }
-
     section {
-        padding: 10rem 3% 2rem;
+        padding: 8rem 3% 2rem;
     }
-
-    .services {
-        padding-bottom: 7rem;
+    .services,
+    .Assignment,
+    .footer {
+        padding-bottom: 5rem;
     }
-
-    .Asigment {
-        padding-bottom: 7rem;
-    }
-    .
-    .footer{
-        padding: 2rem 3%;
-    }
-}
-
-
-@media (max-width: 895px) {
     #menu-icon {
         display: block;
     }
+    /* Additional tablet-specific adjustments */
 }
 
+/* Laptop (1024px) */
+@media (max-width: 1024px) {
+    html {
+        font-size: 65%;
+    }
+    .projects-container {
+        margin: 0 6rem;
+    }
+    /* Other styles for Laptop screens */
+}
+
+/* Laptop Large (1440px) */
+@media (max-width: 1440px) {
+    html {
+        font-size: 70%;
+    }
+    .projects-container {
+        margin: 0 8rem;
+    }
+    /* Other styles for Laptop Large screens */
+}
+
+/* Additional styling adjustments for screens up to 895px */
 @media (max-width: 895px) {
     .navbar {
         position: absolute;
@@ -51,60 +92,39 @@
         border-top: 0.1rem solid rgba(0, 0, 0, 0.15);
         display: none;
     }
-
     .navbar.active {
         display: block;
     }
-
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
-
     .home {
         flex-direction: column;
         margin: 5rem 4rem;
     }
-
     .home-content h3 {
         font-size: 2.6rem;
     }
-
     .home-content h1 {
         font-size: 5rem;
     }
-
-    .home-img img {
+    .home-img img,
+    .about img {
         width: 70vw;
         margin-top: 4rem;
     }
-
     .about {
         flex-direction: column-reverse;
     }
-
     .about-content {
         margin: 1rem 4rem;
     }
-
-    .about img {
-        width: 70vw;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-    }
-
-    .services h2 {
-        margin-bottom: 3rem;
-    }
-
-    .Asigment h2 {
-        margin-bottom: 3rem;
-    }
-
+    .services h2,
+    .Assignment h2,
     .projects h2 {
         margin-bottom: 3rem;
     }
-
-
+    /* Additional small screen adjustments */
 }
