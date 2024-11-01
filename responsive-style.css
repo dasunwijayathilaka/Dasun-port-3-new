@@ -89,14 +89,14 @@
         flex-direction: column-reverse;
     }
 
-    .about-content {
-        margin: 1rem 4rem;
-    }
-
     .about img {
         width: 70vw;
         margin-top: 1rem;
         margin-bottom: 3rem;
+    }
+
+    .about-content {
+        margin: 1rem 4rem;
     }
 
     .services h2 {
