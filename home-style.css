@@ -124,7 +124,9 @@ section {
 .home-content p {
     font-size: 1.8rem;
     font-weight: 500;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 .social-icons a {
     display: inline-flex;

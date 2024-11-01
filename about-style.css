@@ -9,13 +9,13 @@
 }
 
 .about-img {
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .about-img img {
     position: relative;
     width: 30vw;
-    border-radius: 50%;
+    border-radius: 100%;
     cursor: pointer;
 }
 
