@@ -29,6 +29,16 @@
     cursor: pointer;
     transition: 0.4s ease;
 }
+.Asigment-box img {
+    width: 70%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+/*.Asigment-box:hover img {
+    transform: scale(1.1);
+}*/
+
 
 .Asigment-container .Asigment-box:hover {
     border-color: var(--main-color);
