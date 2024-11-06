@@ -1,5 +1,4 @@
-
-    /* Preloader Styles */
+/* Preloader Styles */
 #preloader {
     position: fixed;
     top: 0;
@@ -14,11 +13,11 @@
     overflow: hidden;
 }
 
-/* Deadpool Logo Container */
+/* Deadpool Logo Container (Smaller size) */
 .logo-container {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 300px;  /* Reduced size */
+    height: 300px; /* Reduced size */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,8 +28,8 @@
 /* Mask (Black Ovals and White Eyes) */
 .mask {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 240px;  /* Reduced size */
+    height: 240px; /* Reduced size */
     background-color: transparent;
     border-radius: 50%;
     border: 10px solid black; /* Black border added */
@@ -45,14 +44,14 @@
     100% { transform: scale(1); }
 }
 
-/* Black Ovals for Mask */
+/* Black Ovals for Mask (Smaller size) */
 .eye {
     position: absolute;
-    width: 100px;
-    height: 180px;
+    width: 60px;   /* Reduced size */
+    height: 120px; /* Reduced size */
     background-color: black;
     border-radius: 50%;
-    top: 70px;
+    top: 60px;     /* Adjusted position */
 }
 
 .eye-left {
@@ -65,13 +64,13 @@
     clip-path: polygon(0% 0, 60% 0, 60% 100%, 0% 100%);
 }
 
-/* White Pupil */
+/* White Pupil (Smaller size) */
 .pupil {
     position: absolute;
     top: 35px;
-    left: 20px;
-    width: 50px;
-    height: 100px;
+    left: 15px;  /* Adjusted position */
+    width: 30px;  /* Reduced size */
+    height: 40px; /* Reduced size */
     background-color: white;
     border-radius: 50%;
     animation: pulsePupil 1s infinite ease-in-out; /* Pupil pulse */
@@ -102,9 +101,9 @@
 }
 
 .dot {
-    width: 15px;
-    height: 15px;
-    margin: 0 10px;
+    width: 12px;  /* Reduced size */
+    height: 12px; /* Reduced size */
+    margin: 0 8px; /* Adjusted spacing */
     background-color: white;
     border-radius: 50%;
     opacity: 0;
