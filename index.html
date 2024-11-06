@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="skills-style.css">
     <link rel="stylesheet" href="responsive-style.css">
     <link rel="stylesheet" href="asigment-style.css">
+    <link rel="stylesheet" href="preloader.css">
 <!--
     <link rel="stylesheet" href="animation-back.css">
 -->
@@ -25,8 +26,57 @@
     <link rel="stylesheet" href="education-style.css">
 -->
 
+
+
 </head>
+
 <body>
+
+<!-- Preloader with Animated Deadpool Logo and Blinking Dots (Ellipsis) -->
+<div id="preloader">
+    <div class="logo-container">
+        <div class="mask">
+            <div class="eye eye-left">
+                <div class="pupil"></div>
+            </div>
+            <div class="eye eye-right">
+                <div class="pupil"></div>
+            </div>
+        </div>
+        <!-- Blinking Dots (Ellipsis) Below Logo -->
+        <div class="ellipsis">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content of the Page -->
+<div id="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is the main content of your website.</p>
+</div>
+
+<!--preloader  java script code is heare but i add this anorther js file -->
+
+<!--<script>
+    // JavaScript to handle preloader with a 12-second delay
+    window.addEventListener("load", function () {
+        setTimeout(function() {
+            // Hide Deadpool preloader
+            const preloader = document.getElementById("preloader");
+            preloader.style.display = "none";
+
+            // Show main content after the delay
+            const content = document.getElementById("content");
+            content.style.display = "block";
+        }, 12000); // 12 seconds delay
+    });
+</script>-->
+
+
 <!--
 
 <div class="container">
@@ -573,6 +623,7 @@
 </footer>
 
 <script src="darkmod.js"></script>
+<script src="preloader.js"></script>
 <script src="contact.js"></script>
 <script src="script.js"></script>
 </body>
