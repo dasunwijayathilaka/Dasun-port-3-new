@@ -14,7 +14,7 @@
     --bg-color: #ffffff;
     --second-bg-color: #fafafa;
     --text-color: black;
-    --main-color: #ff8615;
+    --main-color: rgb(255, 134, 21); /* Original color converted to RGB */
 }
 
 
