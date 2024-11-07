@@ -84,7 +84,7 @@
 
 /* Google-style Loading Dots (Horizontal Under Logo) */
 .loading-dots {
-    margin-top: 20px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
     width: 100px; /* Adjust based on your design */
@@ -92,12 +92,13 @@
 
 /* Each dot representing Google colors */
 .dot {
-    width: 12px;  /* Dot size */
-    height: 12px;
+    width: 8px;  /* Smaller dot size */
+    height: 8px;  /* Smaller dot size */
     background-color: #FFFFFF; /* Default white color */
     border-radius: 50%;
     animation: dotPulse 1.2s infinite ease-in-out;
 }
+
 
 /* Google color sequence */
 .dot:nth-child(1) {
