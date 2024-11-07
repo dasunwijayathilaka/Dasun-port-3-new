@@ -1,11 +1,248 @@
-/* Preloader Styles */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fullscreen Preloader */
 #preloader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #8B0000; /* Dark Red Background */
+    background-color: #FFFFFF; /* White background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Logo Container with Pop-up Animation */
+.logo-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: popUp 2s ease-in-out forwards; /* Added pop-up animation */
+}
+
+/* Mask (Orange Circle) with Black Border and Pop-up Animation */
+.mask {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #FFA500; /* Orange color */
+    border-radius: 50%;
+    border: 6px solid black; /* Black border */
+    box-shadow: 0px 0px 50px rgba(255, 165, 0, 0.6); /* Glow effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0); /* Start with a small size */
+    animation: popUpLogo 2s ease-in-out forwards 0.5s; /* Pop-up the mask with delay */
+}
+
+/* Eyes */
+.eye {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    background-color: #000000; /* Black background */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Inner white circle with Pupil Pulse */
+.eye::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #FFFFFF; /* White inner circle */
+    border-radius: 50%;
+    animation: pulsePupil 1s infinite ease-in-out; /* Pupil pulse animation */
+}
+
+/* Specific positioning for eyes */
+.eye-left {
+    left: 30px;
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+.eye-right {
+    right: 30px;
+    clip-path: polygon(0% 0, 60% 0, 60% 100%, 0% 100%);
+}
+
+/* Google-style Loading Dots (Horizontal Under Logo) */
+.loading-dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100px; /* Adjust based on your design */
+}
+
+/* Each dot representing Google colors */
+.dot {
+    width: 12px;  /* Dot size */
+    height: 12px;
+    background-color: #FFFFFF; /* Default white color */
+    border-radius: 50%;
+    animation: dotPulse 1.2s infinite ease-in-out;
+}
+
+/* Google color sequence */
+.dot:nth-child(1) {
+    background-color: #4285F4; /* Blue */
+}
+
+.dot:nth-child(2) {
+    background-color: #EA4335; /* Red */
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    background-color: #FBBC05; /* Yellow */
+    animation-delay: 0.4s;
+}
+
+.dot:nth-child(4) {
+    background-color: #34A853; /* Green */
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(5) {
+    background-color: #808080; /* Gray */
+    animation-delay: 0.8s;
+}
+
+/* Pulse Animation for the Dots */
+@keyframes dotPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5); /* Scale up slightly */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Pop-up animation for the logo */
+@keyframes popUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Pop-up animation for the mask */
+@keyframes popUpLogo {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Pupil pulse animation for inner white circle */
+@keyframes pulsePupil {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+!* Preloader Styles *!
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF; !* White Background *!
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,46 +250,39 @@
     overflow: hidden;
 }
 
-
-/* Deadpool Logo Container (Smaller size) */
+!* Deadpool Logo Container (Smaller size) *!
 .logo-container {
     position: relative;
-    width: 300px;  /* Reduced size */
-    height: 300px; /* Reduced size */
+    width: 300px;  !* Reduced size *!
+    height: 300px; !* Reduced size *!
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: popUp 2s ease-in-out; /* Pop-up animation */
+    animation: popUp 2s ease-in-out; !* Pop-up animation *!
 }
 
-/* Mask (Black Ovals and White Eyes) */
+!* Mask (Orange Circle with Eyes) *!
 .mask {
     position: relative;
-    width: 240px;  /* Reduced size */
-    height: 240px; /* Reduced size */
-    background-color: transparent;
+    width: 240px;  !* Reduced size *!
+    height: 240px; !* Reduced size *!
+    background-color: #FFA500; !* Orange color for Deadpool logo *!
     border-radius: 50%;
-    border: 10px solid black; /* Black border added */
-    box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.8); /* Added glow */
-    transform: scale(0); /* Start with a small size */
-    animation: popUpLogo 2s ease-in-out forwards 0.5s; /* Pop up the logo */
+    border: 10px solid #FFA500; !* Orange border to match logo color *!
+    box-shadow: 0px 0px 100px rgba(255, 165, 0, 0.8); !* Orange glow *!
+    transform: scale(0); !* Start with a small size *!
+    animation: popUpLogo 2s ease-in-out forwards 0.5s; !* Pop up the logo *!
 }
 
-/* Animation for Pop-Up Effect */
-@keyframes popUpLogo {
-    0% { transform: scale(0); }
-    100% { transform: scale(1); }
-}
-
-/* Black Ovals for Mask (Smaller size) */
+!* Adjust the eye shapes and color *!
 .eye {
     position: absolute;
-    width: 60px;   /* Reduced size */
-    height: 120px; /* Reduced size */
-    background-color: black;
+    width: 60px;   !* Reduced size *!
+    height: 120px; !* Reduced size *!
+    background-color: white; !* White color for eyes *!
     border-radius: 50%;
-    top: 60px;     /* Adjusted position */
+    top: 60px;     !* Adjusted position *!
 }
 
 .eye-left {
@@ -65,16 +295,17 @@
     clip-path: polygon(0% 0, 60% 0, 60% 100%, 0% 100%);
 }
 
-/* White Pupil (Smaller size) */
+
+!* White Pupil (Smaller size) *!
 .pupil {
     position: absolute;
     top: 35px;
-    left: 15px;  /* Adjusted position */
-    width: 30px;  /* Reduced size */
-    height: 40px; /* Reduced size */
+    left: 15px;  !* Adjusted position *!
+    width: 30px;  !* Reduced size *!
+    height: 40px; !* Reduced size *!
     background-color: white;
     border-radius: 50%;
-    animation: pulsePupil 1s infinite ease-in-out; /* Pupil pulse */
+    animation: pulsePupil 1s infinite ease-in-out; !* Pupil pulse *!
 }
 
 @keyframes pulsePupil {
@@ -82,7 +313,7 @@
     50% { transform: scale(1.2); }
 }
 
-/* Animation for Logo */
+!* Animation for Logo *!
 @keyframes popUp {
     0% {
         transform: scale(0.5);
@@ -94,7 +325,7 @@
     }
 }
 
-/* Blinking 4 Dots Preloader (Ellipsis Animation) */
+!* Blinking 4 Dots Preloader (Ellipsis Animation) *!
 .ellipsis {
     display: flex;
     justify-content: center;
@@ -102,9 +333,9 @@
 }
 
 .dot {
-    width: 12px;  /* Reduced size */
-    height: 12px; /* Reduced size */
-    margin: 0 8px; /* Adjusted spacing */
+    width: 12px;  !* Reduced size *!
+    height: 12px; !* Reduced size *!
+    margin: 0 8px; !* Adjusted spacing *!
     background-color: white;
     border-radius: 50%;
     opacity: 0;
@@ -133,10 +364,12 @@
     100% { opacity: 0; }
 }
 
-/* Hide main content initially */
+!* Hide main content initially *!
 #content {
     display: none;
     padding: 20px;
     text-align: center;
     color: #333;
 }
+
+*/
