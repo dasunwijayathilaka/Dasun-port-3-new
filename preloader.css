@@ -30,6 +30,7 @@
     align-items: center;
     justify-content: center;
     animation: popUp 2s ease-in-out forwards; /* Added pop-up animation */
+    animation: pulsePupil 1s infinite ease-in-out; /* Pupil pulse animation */
 
 }
 
