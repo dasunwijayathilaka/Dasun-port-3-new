@@ -1,3 +1,4 @@
+/*
 window.addEventListener("load", function() {
     const preloader = document.getElementById("preloader");
     setTimeout(() => {
@@ -8,3 +9,4 @@ window.addEventListener("load", function() {
         }, 1000);
     }, 12000); // Set to 12 seconds
 });
+*/

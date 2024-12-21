@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <title>Case_02</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+</head>     /* case 2 done */
+<style>
+    header {
+        width: 100%;
+        height: 75px;
+        border-bottom: black solid 5px;
+        position: relative;
+    }
+
+    /* This is ijse logo */
+    header>img {
+        height: 50px;
+        left: 30px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .header-navigation {
+        height: 50px;
+        width: 370px;
+        font-family: sans-serif;
+        list-style: none;
+        display: inline;
+        right: 30px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .header-navigation>ul>li {
+        margin-left: 20px;
+        display: inline;
+    }
+
+    footer {
+        background-color: gray;
+    }
+
+    footer>div {
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-family: sans-serif;
+    }
+
+    main {
+        position: relative;
+
+    }
+
+    body>main>aside{
+        color: white;
+        background-color: purple;
+        width: 250px;
+        position: absolute;
+        top: 0;
+        bottom: -10px;
+        margin-top: -3px;
+    }
+
+    body>main>aside>nav {
+        position: absolute;
+        height: 100%;
+        width: 200px;
+    }
+
+    body>main>aside>nav>ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    body>main>aside>nav>ul>li {
+        margin-top: 25px;
+    }
+
+    .content-section {
+        margin-left: 250px;
+    }
+
+    .monkey-section {
+        height: 300px;
+        position: relative;
+        margin: 3px;
+        border: 2px solid black;
+
+    }
+
+    .monkey-section>div {
+        background: url("../assets/assignment-resources/images/monk.gif");
+        height: 300px;
+        width: calc(100%/3);
+        position: absolute;
+        border: 2px solid green;
+    }
+
+    .monkey-section>div:nth-child(2) {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .monkey-section>div:last-child {
+        right: 0;
+    }
+
+    p {
+        font-family: "Handjet", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:<weight>;
+        font-style: normal;
+        font-variation-settings:
+                "ELGR" 1,
+                "ELSH" 2;
+    }
+
+    .content-section>p:last-child {
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <header>
+        <!--ijse logo here-->
+        <img src="../assets/assignment-resources/images/ijse.png" title="Institute of Software Engineering" alt="logo">
+
+        <nav class="header-navigation">
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Contacts</li>
+                <li>About us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Contacts</li>
+                    <li>About us</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="content-section">
+
+            <section class="monkey-section">
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dolor dolore dolorem dolores, earum eum ex harum minima molestiae mollitia, nam nihil obcaecati perferendis, quam sed sunt ut voluptatem!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div>Developed by IJSE</div>
+    </footer>
+</body>
+</html>
