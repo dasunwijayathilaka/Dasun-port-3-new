@@ -45,6 +45,14 @@ Crafted elegant UI designs using HTML, CSS, and Bootstrap with color schemes mat
 - 💻 Enthusiastic about solving real-world problems with code  
 
 ---
+## 🌟 Figma Mockup
+https://www.figma.com/design/yQOlJ7VQraGoxY3k4P6TmL/Personal-Portfolio-design?node-id=196-11
+---
+## 🌟 WireFrame
+
+---
+## 🌟 Site Map
+![Screenshot 2024-12-21 100550](https://github.com/user-attachments/assets/66754e69-3469-49a0-9d5d-9a68fee4585c)
 
 
 ### 📜 License  
